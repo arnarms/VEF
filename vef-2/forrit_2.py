@@ -24,10 +24,6 @@ def word(word):
         else:
                 return '<b>This photo does not exist</b>'
 
-@route('/images/<filename:re:.*\.png>')
-def static(filename):
-    return static_file(filename, root="images", mimetype=".png")
-
 run(host='localhost', port=8080, debug=True)
                       
     
