@@ -1,18 +1,15 @@
-# Skilgreinum route class og run function úr bottle module.
+
+    # Skilgreinum route class og run function úr bottle module.
 import os
 from os import environ as env
 from sys import argv
 
 import bottle
-from bottle import default_app, request, route, response, get, run, error, abort
-
-@error(404)
-def custom404(error):
-    return 'Sorry, you encountered an error '
+from bottle import default_app, request, route, response, get, run
 
 @route('/admin/<admin>') #decorator
 def admin(admin):
-        return '<b> You are on the admin page '  + admin + '</b>'
+        return '<b> You are the admin page: '  + admin + '</b>'
 
 @route('/page/<id>/<name>') #decorator
 def page(id, name):

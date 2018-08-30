@@ -4,22 +4,33 @@ from os import environ as env
 from sys import argv
 
 import bottle
-from bottle import default_app, request, route, response, get, run
+from bottle import route, run, template, BaseTemplate, static_file, error, abort
 
-@route('/admin/<admin>') #decorator
-def admin(admin):
-        return '<b> You are the admin page: '  + admin + '</b>'
+app = bottle.default_app()
+BaseTemplate.defaults['get_url'] = app.get_url  # reference to function
 
-@route('/page/<id>/<name>') #decorator
-def page(id, name):
-        return '<b> You are now viewing page ' + id + ' with the name of ' + name + '</b>'
+@error(404)
+def custom404(error):
+    return 'Sorry, you encountered an error '
 
-@route('/articles/<page>/<id>') #decorator
-def article(id, page):
-        return '<b> You are now browsing article with the ID '  + id + ' called ' + page + '</b>'
+@route("/photo/<word>")
+def word(word):
+        if word == "cute":
+                return '<img style="max-width: 450px; max-height: 300px" src="https://is2-ssl.mzstatic.com/image/thumb/Purple71/v4/6b/48/62/6b486209-6e80-2b25-f9d1-36400402a27a/source/512x512bb.jpg">'
+        elif word == "sad":
+                return '<img style="max-width: 450px; max-height: 300px" src="https://i.pinimg.com/originals/8b/9c/07/8b9c0757ce4a38a8c799c33b77db7559.jpg">'
+        elif word == "happy":
+                return '<img style="max-width: 450px; max-height: 300px" src="https://data.whicdn.com/images/171399860/large.jpg">'
+        else:
+                return '<b>This photo does not exist</b>'
+
+@route('/images/<filename:re:.*\.png>')
+def static(filename):
+    return static_file(filename, root="images", mimetype=".png")
 
 run(host='localhost', port=8080, debug=True)
                       
-            
+    
+
 #bottle.run(host='0.0.0.0', port=argv[1])                           
     
