@@ -1,3 +1,3 @@
 # vef-einn
 
-https://dashboard.heroku.com/apps/tskoli1
+https://tskoli1.herokuapp.com/
