@@ -5,9 +5,9 @@ from sys import argv
 import bottle
 from bottle import default_app, request, route, response, get, run, template, static_file
 
-horseNews={'title': 'Huge horse is born, like really huge', 'article': 'Today a huge horse was born, truly an amazing feat'}
-lotteryNews={'title': 'A millionare wins the lottery', 'article': 'Jimmy Moneybags has just won his second billion, people are starting to think this is rigged'}
-computerNews={'title': 'Scientist invents the fastest CPU', 'article': 'Scientist invents a superpower CPU,  but unfortunately it is not compatible with modern tech'}
+horseNews={'title': 'Huge horse is born, like really huge', 'article': 'Today a huge horse was born, truly an amazing feat', 'reporter': 'Jack Boham'}
+lotteryNews={'title': 'A millionare wins the lottery', 'article': 'Jimmy Moneybags has just won his second billion, people are starting to think this is rigged', 'reporter': 'James Moneyman'}
+computerNews={'title': 'Scientist invents the fastest CPU', 'article': 'Scientist invents a superpower CPU,  but unfortunately it is not compatible with modern tech', 'reporter': 'Jimmy Neutron'}
 
 array=[horseNews,lotteryNews,computerNews]
 
