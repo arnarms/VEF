@@ -1,4 +1,4 @@
-% include('vef-3b/templates/header.tpl')
+% include('vef-3/vef-3b/templates/header.tpl')
 <main>
 	<a href="/">Go back</a>
 	<h1>{{ title }}</h1>
@@ -6,4 +6,4 @@
 		
 
 </main>
-% include('vef-3b/templates/footer.tpl')
+% include('vef-3/vef-3b/templates/footer.tpl')

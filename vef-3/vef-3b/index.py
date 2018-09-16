@@ -13,16 +13,16 @@ array=[horseNews,lotteryNews,computerNews]
 
 @route("/")
 def index():
-    return template("vef-3b/templates/index.tpl")
+    return template("vef-3/vef-3b/templates/index.tpl")
 
 @route('/<article>')
 def article(article):
     if article == "horse":
-        return template("vef-3b/templates/article.tpl", horseNews)
+        return template("vef-3/vef-3b/templates/article.tpl", horseNews)
     elif article == "lottery":
-        return template("vef-3b/templates/article.tpl", lotteryNews)
+        return template("vef-3/vef-3b/templates/article.tpl", lotteryNews)
     elif article == "tech":
-        return template("vef-3b/templates/article.tpl", computerNews)
+        return template("vef-3/vef-3b/templates/article.tpl", computerNews)
     
 run(host='localhost', port=8080, debug=True)
                       
