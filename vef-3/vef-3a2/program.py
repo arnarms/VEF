@@ -25,6 +25,7 @@ kennitala3 = id(10)
 kSum1 = str(sum_digits(kennitala1))
 kSum2 = str(sum_digits(kennitala2))
 kSum3 = str(sum_digits(kennitala3))
+
 k1={'kennitala': kennitala1, 'sum' : kSum1}
 k2={'kennitala': kennitala2, 'sum' : kSum2}
 k3={'kennitala': kennitala3, 'sum' : kSum3}

@@ -1,4 +1,4 @@
-% include('vef-3/vef-3a/template/header.tpl')
+% include('vef-3/vef-3a2/template/header.tpl')
 <main>
 <!DOCTYPE html>
     <html>
@@ -9,4 +9,4 @@
         </body></center>
     </html>
 </main>
-% include('vef-3/vef-3a/template/footer.tpl')
+% include('vef-3/vef-3a2/template/footer.tpl')
