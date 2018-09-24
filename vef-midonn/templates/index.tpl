@@ -1,14 +1,11 @@
 % include("vef-midonn/templates/header.tpl")
 
 
-<header>
-        <h1> Arnar's Gas Price Checker </h1>
-		<img src="static/image/lilcat.png" draggable="false">
-</header>
 
         <body>
-            <div class = "menu-wrap">
 
+        
+            <div class = "menu-wrap">
                         <section> <code>
                                 %for r in rows:
                                 <ul>
@@ -17,7 +14,24 @@
                                     </a>
                                 </ul>
                                 %end                
-                        </section> </code>
-            </div>
+                        </section> </code>        
+              
+                    
+                    <table>
+                            <tr>
+                                <th>Station</th>
+                                <th>Cheapest Gas</th>
+                                <th>Cheapest diesel</th>
+                            </tr>
+
+                % for read in gogn["results"]:
+                            <tr>
+                        <td>{{read["company"]}} </td>
+                        <td>{{read["bensin95"]}} kr</td>
+                        <td>{{read["diesel"]}} kr</td>
+                            </tr>
+                            % end
+                    </table>
+             </div>
         </body>
 % include("vef-midonn/templates/footer.tpl")
