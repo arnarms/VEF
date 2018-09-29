@@ -1,1 +1,1 @@
-# Miðannarverkefni VEF - Arnar Már Skúlason
+# Gas Station

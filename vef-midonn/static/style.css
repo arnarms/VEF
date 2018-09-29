@@ -1,7 +1,7 @@
 
 body{
 	margin: 0;
-	background-color: #fff;
+	background-color: rgba(255, 249, 249, 0.575);
 }
 h1, h2, h3, h4, h5, h6, p{
 	margin: 0;
@@ -14,14 +14,16 @@ header{
 	text-align: center;
 	width: 100%;
 	position: absolute;
-	top: 15%;
+	top: 10%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	display: block;
+    margin:0px auto;
 }
 
 header img{
 	right: 0px;
-	height: 120px;
+
 	vertical-align: text-top;
 	display: inline-block;
     -webkit-user-select: none;
@@ -52,20 +54,19 @@ h1 {
         -ms-user-select: none;
             user-select: none;
 }
+
 li {	
 	text-align: center;
 }
+
  ul{
 	display: block;
 	text-align: center;
 
-
-
 	border-radius: 200px;
 	border: 3px solid #b1a5a9;
 
-    margin: 3px;
-    width: 95%;
+    width: 100%;
 	padding: 10px;
 	
 	font-family: moon;
@@ -81,26 +82,18 @@ li {
 section {
   margin: 200px 10% 180px 10%;
 }
+
 .menu-wrap { 
 	width:750px;
 	margin:100px auto;
-	
 }
-code {
-
-	border-radius: 6px;
-	color: #fff;
 
 
-	padding: 24px 15px;
-	text-align: center;
-  }
-
-  footer{
+footer{
 	position:fixed;
 	bottom:0;
 	left:0;
-   }
+}
 
 a:link {
 	color: #f2c1d1;
@@ -109,10 +102,12 @@ a:link {
 	-moz-transition:color .2s ease-out, background 2s ease-in;
 	-webkit-transition:color .2s ease-out, background 2s ease-in;
 	transition:color .2s ease-out, background 2s ease-in;
+	text-decoration: none;
 }
 
-a:hover, ul:hover { color:#db7b9b;}
+a:hover, ul:hover, a:visited:hover, ul:visited:hover { color:#db7b9b;}
 
+a:visited, ul:visited { color: #f2c1d1;}
 
 @font-face{
 	font-family: moon;
@@ -130,13 +125,18 @@ a:hover, ul:hover { color:#db7b9b;}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
+    border-spacing: 0;
     width: 100%;
+	border: 1px solid #ddd;
+
 }
+	
 
 td, th {
     border: 1px solid #dddddd;
     text-align: center;
-    padding: 8px;
+	padding: 8px;
+	
 }
 
 tr:nth-child(even) {
