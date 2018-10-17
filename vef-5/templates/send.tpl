@@ -6,9 +6,9 @@
 
                 <ul>
                     <li>Registered Name: {{name}}</li>
-                    <li>Registed Address: {{address}}</li>
-                    <li>Registed Email: {{email}}</li>
-                    <li>Registed Phone: {{phone}}</li>
+                    <li>Registered Address: {{address}}</li>
+                    <li>Registered Email: {{email}}</li>
+                    <li>Registered Phone: {{phone}}</li>
                     <li>First Course picked on {{dateOne}}, and the class is {{workshopOne}}</li>
                     <li>Second Course picked on {{dateTwo}}, and the class is {{workshopTwo}}</li>
                     <li>Third Course picked on {{dateThree}}, and the class is {{workshopThree}}</li>
