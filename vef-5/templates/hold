@@ -1,0 +1,21 @@
+
+                                <label>Address:</label><br>
+                                    <input type="text" name="address" required><br>
+
+                                <label>Email:</label><br>
+                                    <input type="email" name="email" required><br>
+
+                                <label>Phone:</label><br>
+                                    <input type="tel" name="phone" required><br>
+
+                                <label>Date:</label><br>
+                                    <input type="date" name="date" required><br>
+
+                                <label>Pick Course:</label><br>
+                                <form action="">
+                                    <input type="radio" name="workshop" value="python"> Python<br>
+                                    <input type="radio" name="workshop" value="javascript"> JavaScript<br>
+                                    <input type="radio" name="workshop" value="databases"> Databases<br>
+                                </form>
+
+                            </form>

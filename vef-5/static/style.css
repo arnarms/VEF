@@ -1,0 +1,22 @@
+section {
+    height: 200px;
+    width: 400px;
+
+    position: fixed;
+    top: 50%;
+    left: 52%;
+    margin-top: -200px;
+    margin-left: -200px;
+}
+
+h1{
+    height: 200px;
+    width: 400px;
+
+
+    position: fixed;
+    top: 50%;
+	left: 46.5%;
+    margin-top: -240px;
+    margin-left: -200px;
+}
