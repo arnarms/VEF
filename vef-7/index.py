@@ -19,6 +19,7 @@ def index():
 @route("/send", method="POST")
 def send():
     name = request.forms.get('name')
+
     
     return template("./templates/send.tpl", name=name)
 run(host='localhost', port=8080, debug=True)
